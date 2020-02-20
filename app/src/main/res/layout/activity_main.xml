@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -27,40 +26,39 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
-        <io.mns.baby.FButton
-            android:id="@+id/alert"
+        <Button
+            android:id="@+id/exit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="32dp"
-            android:text="fake some alert"
-            android:textColor="#fff"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            fbutton:buttonColor="#FF9800"
-            fbutton:cornerRadius="5dp"
-            fbutton:shadowColor="#D58106"
-            fbutton:shadowEnabled="true"
-            fbutton:shadowHeight="5dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/exit"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:backgroundTint="@color/colorAccent"
+            android:foregroundTint="@color/colorAccent" />
 
 
-        <io.mns.baby.FButton
-            android:id="@+id/calm_down"
+        <Button
+            android:id="@+id/calm"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="32dp"
-            android:text="got it"
-            android:textColor="#fff"
-            android:translationY="@dimen/_100"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            fbutton:buttonColor="#388E3C"
-            fbutton:cornerRadius="5dp"
-            fbutton:shadowColor="#28662B"
-            fbutton:shadowEnabled="true"
-            fbutton:shadowHeight="5dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/calm"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:textColor="#fff"
+            android:backgroundTint="@color/colorAccent"
+            android:foregroundTint="@color/colorAccent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
